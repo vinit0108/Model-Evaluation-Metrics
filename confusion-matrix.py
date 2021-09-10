@@ -20,3 +20,8 @@ F1 = 2 * (precision * recall) / (precision + recall)
 # Method 3: Classification report [BONUS]
 from sklearn.metrics import classification_report
 print(classification_report(y_true, y_pred, target_names=target_names))
+
+
+
+sn.heatmap(confusion_matrix, annot=True)
+plt.show()
